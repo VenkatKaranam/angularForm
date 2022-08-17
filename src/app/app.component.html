@@ -15,7 +15,7 @@
     </div>
 	<form #myForm = "ngForm" (ngSubmit)="onSubmit(myForm.value)">
 		<div class="input_field">
-			<input type="text" required minlength="8" maxlength="15" pattern="^[a-z][a-z\s]*$" ngModel name="firstname" #firstname="ngModel" class="input" id="firstname" placeholder="NAME">
+			<input type="text" required minlength="8" maxlength="15" pattern="^[a-z A-Z][a-z\s]*$" ngModel name="firstname" #firstname="ngModel" class="input" id="firstname" placeholder="NAME">
       <div class="warning" *ngIf="firstname.errors && (firstname.touched && !firstname.valid)">
         <div  *ngIf="firstname.errors?.['required']"><p>Firstname is required </p></div>
         <div  *ngIf="firstname.errors?.['minlength']"><p>Length min 8 characters</p></div>
