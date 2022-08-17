@@ -1,6 +1,6 @@
 //Install express server
 const express = require('express');
-const path = require('path');
+res.sendFile(path.join(__dirname, './public', 'Apr29Home.html'));
 
 const app = express();
 
